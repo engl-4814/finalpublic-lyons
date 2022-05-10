@@ -1,1 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;800&family=Major+Mono+Display&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@300&display=swap');
+body {
+  background-color: black;
+  color: white;
+  font-family: Oswald;
+}
+h1 {
+  font-family: Koulen;
+}
+header {
+  background-color: rgba(231, 194, 126, 0.733);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-size: 4rem;
+}
+header > nav > ul >li {
+  padding-right: 2rem;
+}
+img {
+  max-width: 25rem;
+}
+li {
+  list-style: none;
+}
+h2 {
+  font-size: 6rem;
+  font-family: Koulen;
+  text-align: center;
+  background-color:rgba(231, 194, 126, 0.733);
+  color: black;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+section > ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 48rem 47rem;
+  justify-items: center;
+}
+div > img {
+  margin-top: 0rem;
+}
+div > h3 {
+  margin-top: 0rem;
+  margin-left: 1rem;
+}
+div > p {
+  margin-left: 2rem;
+}
+section.gg > section > ul > li > div > p {
+  margin-top: -2rem;
+}
+section.gg > section > ul > li > div > p.link {
+  margin-top: -1rem;
+}
+section.hh > section > ul > li > div > p {
+  margin-top: -2rem;
+}
+section.hh > section > ul > li > div > p.link {
+  margin-top: -1rem;
+}
+section.hh {
+  margin-top: -5rem;
+}
+div {
+  background-color:rgba(231, 194, 126, 0.733);
+  margin-right: 5rem;
+  padding-bottom: .001rem;
+  max-width: 25rem;
+}
+footer > p {
+  text-align: center;
+}
+a {
+  color: rgba(167, 47, 103, 0.733)
+}
+@media (min-width: 1600px) {
+  header > nav > ul {
+    display: flex;
+  }
+  section > ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 52rem 48rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  img {
+    max-width: 34rem;
+  }
+  div {
+    max-width: 34rem;
+  }
+  section.gg {
+    margin-bottom: 11rem;
+  }
+}
