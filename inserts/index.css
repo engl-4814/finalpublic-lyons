@@ -21,7 +21,7 @@ body {
   color: white;
   font-family: Oswald;
 }
-/* body-text */
+/* ~750-body-text */
 h1 {
   font-family: Koulen;
 }
@@ -40,7 +40,7 @@ h3 {
 p {
   font-size: 2rem;
 }
-/* body-layout */
+/* ~750-body-layout */
 header {
   background-color: rgba(231, 194, 126, 0.733);
   display: flex;
