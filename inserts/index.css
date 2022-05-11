@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@300&display=swap');
+header.header {
+  grid-area: header;
+}
+main.main {
+  grid-area: main;
+}
+section.gg {
+  grid-area: gg
+}
+section.hh {
+  grid-area: hh;
+}
+footer.footer {
+  grid-area: footer;
+}
 body {
   background-color: black;
   color: white;
@@ -33,6 +48,8 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+  font-family: Koulen;
+  margin-bottom: 2rem;
 }
 p {
   font-size: 2rem;
@@ -91,7 +108,7 @@ a {
   }
   h3 {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   img {
     max-width: 34rem;
@@ -101,5 +118,32 @@ a {
   }
   section.gg {
     margin-bottom: 11rem;
+  }
+}
+@media (min-width: 1920px) {
+  header {
+    font-size: 2rem;
+    max-height: 7rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    max-height: 7rem;
+    font-size: 4rem;
+    margin-right: 4.5rem;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 9rem 4rem 4rem 4rem;
+    grid-template-areas:
+    "header header header"
+    "main main footer"
+    "main main footer"
+    "main main footer";
+  }
+  footer {
+    margin-top: 1rem;
   }
 }
