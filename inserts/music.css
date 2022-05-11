@@ -30,11 +30,11 @@ h2 {
   font-size: 3rem;
   color: white
 }
-h3 {
+h4 {
   font-family: Koulen;
   font-size: 2rem;
 }
-h4 {
+h3 {
   font-family: Koulen;
   font-size: 3rem;
   text-align: center;
@@ -79,7 +79,7 @@ div > h2 {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
-div > h3 {
+div > h4 {
   margin-top: 0rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -115,7 +115,7 @@ aside > p {
   aside > section > ul {
     grid-template-rows: 50rem 48rem;
   }
-  h4 {
+  h3 {
     font-size: 4rem;
   }
   img {
@@ -126,8 +126,106 @@ aside > p {
   }
 }
 @media (min-width: 1920px) {
-
+  header {
+    font-size: 3rem;
+    max-height: 7rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    max-height: 7rem;
+    font-size: 4rem;
+    margin-right: 4.5rem;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 12rem 100rem 52rem;
+    grid-template-rows: 12rem 54rem 54rem 108rem 12rem;
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "main main aside"
+    "main main aside"
+    "footer footer footer"
+  }
+  aside > section > ul {
+    display: grid;
+    grid-template-columns: 50rem;
+    grid-template-rows: 49rem 49rem 49rem 49rem;
+  }
+  aside {
+    margin-top: -4rem;
+  }
 }
 @media (min-width: 4096px) {
-  
+  body {
+    display: grid;
+    grid-template-columns: 12rem 100rem 143rem;
+    grid-template-rows: 20rem 175rem 54rem;
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+  }
+  main > section > ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90rem 48rem;
+  }
+  aside > section > ul {
+    display: grid;
+    grid-template-columns: 80rem 35rem;
+    grid-template-rows: 75rem 35rem;
+  }
+  aside > section > ul > li > div {
+    max-width: 40rem;
+  }
+  aside > section > ul > li > div > img {
+    max-width: 40rem;
+  }
+  header {
+    max-height: 15rem;
+    font-size: 5rem;
+  }
+  h1 {
+    font-size: 15rem;
+  }
+  h2 {
+    font-size: 7rem;
+    margin-left: 2rem;
+  }
+  h3 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 5rem;
+  }
+  img {
+    max-width: 50rem;
+  }
+  div {
+    max-width: 50rem;
+  }
+  div > p {
+    margin-left: 6rem;
+  }
+  div > h2 {
+    margin-bottom: 5rem;
+  }
+  main > section > ul > li > div > h2 {
+    margin-bottom: 7rem;
+  }
+  main > section > ul > li > div > p {
+    margin-top: -3rem;
+  }
+  h4 {
+    font-size: 4rem;
+  }
+  aside > p {
+    font-size: 5rem;
+  }
+  section.smallsec > ul > li > div > p {
+    font-size: 3rem;
+  }
 }
