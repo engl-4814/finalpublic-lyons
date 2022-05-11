@@ -30,9 +30,6 @@ header {
   color: black;
   font-size: 4rem;
 }
-header > nav > ul >li {
-  padding-right: 2rem;
-}
 img {
   max-width: 25rem;
 }
@@ -57,11 +54,8 @@ p {
 section > ul {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 48rem 47rem;
+  grid-template-rows: 48rem 48rem;
   justify-items: center;
-}
-div > img {
-  margin-top: 0rem;
 }
 div > h3 {
   margin-top: 0rem;
@@ -87,11 +81,11 @@ section.hh {
 }
 div {
   background-color:rgba(231, 194, 126, 0.733);
-  margin-right: 5rem;
+  margin-right: 2.5rem;
   padding-bottom: .001rem;
   max-width: 25rem;
 }
-footer > p {
+footer {
   text-align: center;
 }
 a {
@@ -100,6 +94,9 @@ a {
 @media (min-width: 1600px) {
   header > nav > ul {
     display: flex;
+  }
+  header > nav > ul > li {
+    padding: 1rem;
   }
   section > ul {
     display: grid;

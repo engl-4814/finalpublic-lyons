@@ -1,1 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@300&display=swap');
+header.header {
+  grid-area: header;
+}
+main.main {
+  grid-area: main;
+}
+section.bigsec {
+  grid-area: bigsec;
+}
+aside.aside {
+  grid-area: aside;
+}
+section.smallsec {
+  grid-area: smallsec;
+}
+footer.footer {
+  grid-area: footer;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Oswald;
+}
+h1 {
+  font-family: Koulen;
+}
+h2 {
+  font-family: Koulen;
+  font-size: 3rem;
+  color: white
+}
+h3 {
+  font-family: Koulen;
+  font-size: 2rem;
+}
+h4 {
+  font-family: Koulen;
+  font-size: 3rem;
+  text-align: center;
+  background-color:rgba(167, 47, 103, 0.733);
+  color: white;
+  margin-bottom: 5rem;
+}
+p {
+  font-size: 2rem;
+}
+div > p {
+  margin-left: 2.5rem;
+  margin-top: -1rem;
+}
+section.smallsec > ul > li > div > p {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+header {
+  background-color: rgba(167, 47, 103, 0.733);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 25rem;
+}
+section > ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 48rem 48rem;
+  justify-items: center;
+}
+div > h2 {
+  margin-top: 0rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+div > h3 {
+  margin-top: 0rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+div {
+  background-color: rgba(167, 47, 103, 0.733);
+  margin-right: 2.5rem;
+  padding-bottom: .001rem;
+  max-width: 25rem;
+}
+footer {
+  text-align: center;
+}
+a {
+  color: rgba(231, 194, 126, 0.733);
+}
+aside > p {
+  font-size: 4rem;
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  header > nav > ul {
+    display: flex;
+  }
+  header > nav > ul > li {
+    padding: 1rem;
+  }
+  section > ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 54rem 48rem;
+  }
+  aside > section > ul {
+    grid-template-rows: 50rem 48rem;
+  }
+  h4 {
+    font-size: 4rem;
+  }
+  img {
+    max-width: 34rem;
+  }
+  div {
+    max-width: 34rem;
+  }
+}
+@media (min-width: 1920px) {
+
+}
+@media (min-width: 4096px) {
+  
+}
